@@ -1,0 +1,6 @@
+\BOOKMARK [1][-]{section.1}{Making the bot body}{}% 1
+\BOOKMARK [1][-]{section.2}{Building the neural network}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Theory}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Python code}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Dataset}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Transfering the weights to Raspberry Pi \(Yet to be done\)}{}% 6
