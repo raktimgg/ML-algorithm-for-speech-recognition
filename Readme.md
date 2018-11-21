@@ -1,1 +1,1 @@
-This contains all the source files including both the codes. Code.py is the file that contains the code for training the data. 250files.py contains the code for making 250 copies of each soundfile.
+This contains all the source files including both the codes. Code.py is the file that contains the code for training the data. 250files.py contains the code for making 250 copies of each soundfile. To run the code, download the audio dataset from ....... and store it in a folder. In the same folder store 250files.py program. Run the program. Now, change the
