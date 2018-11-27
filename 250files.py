@@ -2,7 +2,7 @@ import numpy as np
 import soundfile as sf
 new_data = np.empty([25000,]) #creating an empty array for new file to be generated from original file
 y1 = np.empty([25000,])
-for j in range(0,25):
+for j in range(0,80):
 	b= "back"+str(j)+".wav"
 	data, samplerate = sf.read(b) #reading audio file using soundfile library
 	print len(data), samplerate
