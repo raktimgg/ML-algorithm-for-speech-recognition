@@ -1,0 +1,24 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[legalpaper,portrait,margin=0.5in]{geometry}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{\textbf{Gradient Descent}}
+\author{Raktim Gautam Goswami and Abhishek Bairagi}
+\maketitle
+
+\abstract{\textit{\textbf{This is a write-up on gradient descent method used in linear regression model in Machine Learning}}}
+
+\paragraph{}
+Gradient descent is a first-order iterative optimization algorithm for finding the minimum of a function. To find a local minimum of a function using gradient descent, one takes steps proportional to the negative of the gradient (or approximate gradient) of the function at the current point.
+
+\paragraph*{Use of gradient descent in machine learning :} While training the linear regression algorithm, initially we give random values to the weights (W) and biases (b). We find the output using these. The predicted output is then compared to the actual output (also called the label). We find the MSE (mean square error) as $$Err = \sum_{i}(Y_{i,predicted} - Y_{i,actual})^2$$ Now, we take the derivative of RMSE w.r.t. W and call this delta lossW $(\Delta lossW)$. Therefore, $$\Delta lossW = {\partial Err}/{\partial W} $$ Using this we find the change in W $(\Delta W)$  as $$\Delta W = \Delta lossW \times lr$$ .Now, we take the derivative of RMSE w.r.t. b and call this delta lossb $(\Delta lossb)$. Therefore, $$\Delta lossb = {\partial Err}/{\partial b} $$ Using this we find the change in b $(\Delta b)$  as $$\Delta b = \Delta lossb \times lr$$, where $lr$ is the learning rate, which defines the magnitude of the step to be taken towards minima of the error function. The new W and b are written as $$W_{new} = W - \Delta W$$ $$b_{new} = b - \Delta b$$
+\newline The above process repeates for a number of times till we get the least loss.
+
+\paragraph*{Further references : } For better understanding of gradient descent, one can take reference from this \href{https://www.youtube.com/watch?v=GCvWD9zIF-s}{video} on a 3D animation of gradient descent.
+\newline Also, one can look at this \href{https://www.youtube.com/watch?v=jc2IthslyzM}{video} for more details and a better understanding on gradient descent.
+
+
+\end{document}
